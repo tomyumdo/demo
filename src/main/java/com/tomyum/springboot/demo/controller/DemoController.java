@@ -20,4 +20,8 @@ public class DemoController {
         return ResponseEntity.ok(productService.findAll());
     }
 
+    @GetMapping("/info")
+    public ResponseEntity getInfo(){
+        return ResponseEntity.ok("Welcome to Demo Service");
+    }
 }
